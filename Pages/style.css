@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Josefin Sans', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.nav{
+    background-color: rgb(22, 24, 22);
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    z-index:9;
+    border:1.5px solid rgb(30, 32, 30);
+}
+
+.nav-list{
+    margin-right:28px;
+    display:flex;
+    align-items:center;
+    list-style:none;
+}
+
+.nav-list a{
+    text-decoration:none;
+    color:rgb(192, 191, 191);
+    padding:35px;
+}
+
+.nav-list a:hover{
+    color:rgb(255, 255, 255);
+}
+
+.photo-list{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photographies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(22, 24, 22);
+  }
+
+.photographies h2{
+    color:rgb(192, 191, 191);
+    padding-top:5%;
+    font-size: 30px;
+}
+
+.photographies p{
+    color:rgb(192, 191, 191);
+    padding-top:5%;
+    padding-bottom:5%;
+    font-size:20px;
+    font-style:italic;
+}
+
+.photographies img{
+    width: 370px;
+    height:305px;
+    padding:1.5%;
+    opacity:0.4;
+    transition: 0.9s;
+    border-radius: 20px;
+    transition: 0.9s;
+  }
+
+  .photographies img:hover{
+    opacity: 1;
+    transform:scale(1.1)
+  }
+
+  .contact div{
+    background-color:rgb(22, 24, 22);
+    height:130px;
+    border-top: 4px solid rgb(30, 32, 30) ;
+  }
+  
+  .contact a{
+    color:rgb(192, 191, 191);
+    display:flex;
+    font-size: 28px;
+    justify-content:center;
+    padding-top:40px;
+    padding-left:50px;
+    padding-right:50px;
+    align-items:center;
+    text-decoration: none;
+  }
+  
+  .contact a:hover{
+  color:rgb(255, 255, 255);
+  }
+  
+  .contact p{
+    color:rgb(192, 191, 191);
+    padding-bottom: 25px;;
+    display:flex;
+    justify-content: center;
+    align-items:center
+  }
+
+  @media (max-width: 1220px){
+
+.nav-list{
+    margin:0;
+}
+
+    .photographies img{
+        width:45%;
+        margin:2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+    .contact{
+      flex-direction: column;
+    }
+  
+    .contact h3{
+      font-size: 24px;
+      margin-bottom: 1px;
+    }
+  
+    .contact p{
+      margin:0;
+    }
+  }
